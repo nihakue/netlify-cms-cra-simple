@@ -6,3 +6,5 @@ thumbnail: /images/logo.svg
 ## This is cool
 ### I can do anything
 Neat
+- hello
+- very cool
