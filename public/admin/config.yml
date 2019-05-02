@@ -1,11 +1,20 @@
 backend:
   name: github
-  repo: talves/netlify-cms-cra-simple
+  repo: nihakue/netlify-cms-cra-simple
 
 media_folder: "public/images"
 public_folder: "images"
 
 collections:
+  - name: posts
+    label: Posts
+    folder: "public/posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: settings
     label: Settings
     files:
